@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.20)
+project(Checking_for_adding_and_receiving_items)
+
+
+add_subdirectory(../Catch2 Catch2_build)
+add_executable(Checking_for_adding_and_receiving_items Checking_for_adding_and_receiving_items.cpp)
+target_link_libraries(Checking_for_adding_and_receiving_items PRIVATE Catch2::Catch2)
